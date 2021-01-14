@@ -66,7 +66,21 @@ var passPool = [];
   
 var finalPassword = [];
 
+//defined function for generating password.
 
+function generatePassword() {
+  //Prompt to select number of characters
+  var numberOfCharacters = prompt("How many characters would you like to incluse. Please choose a number between 8 and 125");
+  //convert variable to number output
+  numberOfCharacters = Number(numberOfCharacters)
+  // define function for when number of characters falls within range and when it does not 
+  if (numberOfCharacters >= 8 && numberOfCharacters <= 125) {
+    //log input to consol
+  console.log(numberOfCharacters); 
+  }
+  
+
+}
 
 
 
@@ -78,13 +92,15 @@ var finalPassword = [];
 var generateBtn = document.querySelector("#generate");
 //consol.logged generateBtn 
 console.log(generateBtn);
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-}
+
+// Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
+
+//   passwordText.value = password;
+// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
