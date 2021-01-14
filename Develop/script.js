@@ -75,7 +75,7 @@ console.log(generateBtn);
 function generatePassword() {
   //Prompt to select number of characters
   var numberOfCharacters = prompt(
-    "How many characters would you like to include? Please choose a number between 8 and 125"
+    "How many characters would you like to include? Please choose a number between 8 and 125."
   );
   //convert variable to number output
   numberOfCharacters = Number(numberOfCharacters);
@@ -124,7 +124,7 @@ function generatePassword() {
       passPool = passPool.concat(symbols);
       console.log(passPool);
     } else {
-      alert("Please select a character set");
+      alert("::cuation:: Please select a character set.");
     }
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
