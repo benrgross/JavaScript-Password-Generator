@@ -79,9 +79,21 @@ function generatePassword() {
   console.log(numberOfCharacters); 
   //confirm if user would like to use lowercase 
   var lowerCaseLetters = confirm("Would you like to include lowercase letters in your password?");
-  //log true or false for lowercase
-  console.log(lowerCaseLetters)
-  // 
+  //log true or false for lowercase letters
+  console.log(lowerCaseLetters);
+  // confirm is user would like to use uppercase letters 
+  var upperCaseLetters = confirm("Would you like to include uppercase letters in your password?");
+  //log true or false for uppercase letters
+  console.log(upperCaseLetters);
+  // confirm is user would like to use numbers
+  var selectNumbers = confirm("Would you like to include numbers in your password?");
+  //log true or false for numbers
+  console.log(selectNumbers);
+  // confirm is user would like to use symbols
+  var selectSymbols = confirm("Would you like to include numbers in your password?")
+  // log true or false for symbols
+  console.log(selectSymbols);
+
   } else { 
     alert("Please input a number between 8 and 125")
   }
