@@ -103,7 +103,7 @@ function generatePassword() {
     console.log(selectNumbers);
     // confirm is user would like to use symbols
     var selectSymbols = confirm(
-      "Would you like to include numbers in your password?"
+      "Would you like to include symbols in your password?"
     );
     // log true or false for symbols
     console.log(selectSymbols);
