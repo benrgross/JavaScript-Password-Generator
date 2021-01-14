@@ -73,6 +73,7 @@ console.log(generateBtn);
 
 //defined function for generating password.
 function generatePassword() {
+  finalPassword = [];
   //Prompt to select number of characters
   var numberOfCharacters = prompt(
     "How many characters would you like to include? Please choose a number between 8 and 125"
@@ -127,16 +128,17 @@ function generatePassword() {
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
       //use math at random method to select character
+      var randomCharacter = "";
       randomCharacter = passPool[Math.floor(Math.random() * passPool.length)];
       console.log(randomCharacter);
       //add character to finalPassword with push method
       finalPassword.push(randomCharacter);
-      console.log(finalPassword);
     }
-  }
-  // else statement to prompt the user to choose a number in range if they input one out of range
-  else {
-    alert("Please input a number between 8 and 125");
+    return finalPassword.join("");
+
+    // else statement to prompt the user to choose a number in range if they input one out of range
+  } else {
+    alert("Please input a value between 8 and 125.");
   }
 }
 
@@ -147,8 +149,10 @@ console.log(generateBtn);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  finalPassword = generatePassword();
+  console.log(finalPassword);
+  passwordText = document.querySelector("#password");
+  passwordText.textContent = finalPassword;
 }
 
 // Add event listener to generate button
