@@ -70,13 +70,20 @@ var finalPassword = [];
 
 function generatePassword() {
   //Prompt to select number of characters
-  var numberOfCharacters = prompt("How many characters would you like to incluse. Please choose a number between 8 and 125");
+  var numberOfCharacters = prompt("How many characters would you like to include? Please choose a number between 8 and 125");
   //convert variable to number output
   numberOfCharacters = Number(numberOfCharacters)
   // define function for when number of characters falls within range and when it does not 
   if (numberOfCharacters >= 8 && numberOfCharacters <= 125) {
     //log input to consol
   console.log(numberOfCharacters); 
+  //confirm if user would like to use lowercase 
+  var lowerCaseLetters = confirm("Would you like to include lowercase letters in your password?");
+  //log true or false for lowercase
+  console.log(lowerCaseLetters)
+  // 
+  } else { 
+    alert("Please input a number between 8 and 125")
   }
   
 
