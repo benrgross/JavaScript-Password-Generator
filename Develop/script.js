@@ -127,9 +127,12 @@ function generatePassword() {
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
       //use math at random method to select character
+      randomCharacter = passPool[Math.floor(Math.random() * passPool.length)];
+      console.log(randomCharacter);
       //add character to finalPassword with push method
+      finalPassword.push(randomCharacter);
+      console.log(finalPassword);
     }
-    //return the final password
   }
   // else statement to prompt the user to choose a number in range if they input one out of range
   else {
@@ -146,8 +149,6 @@ console.log(generateBtn);
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
 }
 
 // Add event listener to generate button
