@@ -124,6 +124,12 @@ function generatePassword() {
       passPool = passPool.concat(symbols);
       console.log(passPool);
     }
+    //Make for loop
+    for (i = 0; i < numberOfCharacters; i++) {
+      //use math at random method to select character
+      //add character to finalPassword with push method
+    }
+    //return the final password
   }
   // else statement to prompt the user to choose a number in range if they input one out of range
   else {
