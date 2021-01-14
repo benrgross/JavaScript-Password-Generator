@@ -6,16 +6,16 @@ To help better understand JavaScript a random password generating function was d
 
 ![Alt text](images/Password-char.png)
 
-[Alt text](images/Password-error.png)
+![Alt text](images/Password-error.png)
 
-[Alt text](images/Password-lower.png)
+![Alt text](images/Password-lower.png)
 
-[Alt text](images/Password-upper.png)
+![Alt text](images/Password-upper.png)
 
-[Alt text](images/Password-numbers.png)
+![Alt text](images/Password-numbers.png)
 
-[Alt text](images/Password-symbols.png)
+![Alt text](images/Password-symbols.png)
 
-[Alt text](images/Password-final.png)
+![Alt text](images/Password-final.png)
 
 link to webpage https://benrgross.github.io/JavaScript-Password-Generator/
