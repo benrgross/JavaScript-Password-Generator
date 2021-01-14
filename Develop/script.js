@@ -66,8 +66,17 @@ var passPool = [];
   
 var finalPassword = [];
 
+
+
+
+
+
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+//consol.logged generateBtn 
 console.log(generateBtn);
 // Write password to the #password input
 function writePassword() {
