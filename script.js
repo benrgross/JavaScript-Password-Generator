@@ -113,15 +113,14 @@ function generatePassword() {
     );
     if (selectNumbers) {
       // log true or false for symbols
-      console.log(selectSymbols);
-    }
-    // if statements add character arrays to password pool if true
-    if (upperCaseLetters) {
-      passPool = passPool.concat(upperCase);
-      console.log(passPool);
+      console.log(selectNumbers);
     }
     if (lowerCaseLetters) {
       passPool = passPool.concat(lowerCase);
+      console.log(passPool);
+    }
+    if (upperCaseLetters) {
+      passPool = passPool.concat(upperCase);
       console.log(passPool);
     }
     if (selectNumbers) {
@@ -131,8 +130,6 @@ function generatePassword() {
     if (selectSymbols) {
       passPool = passPool.concat(symbols);
       console.log(passPool);
-    } else {
-      alert("Please choose at least one character set");
     }
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
