@@ -87,26 +87,34 @@ function generatePassword() {
     var lowerCaseLetters = confirm(
       "Would you like to include lowercase letters in your password?"
     );
-    //log true or false for lowercase letters
-    console.log(lowerCaseLetters);
+    if (lowerCaseLetters) {
+      //log true or false for lowercase letters
+      console.log(lowerCaseLetters);
+    }
     // confirm is user would like to use uppercase letters
     var upperCaseLetters = confirm(
       "Would you like to include uppercase letters in your password?"
     );
-    //log true or false for uppercase letters
-    console.log(upperCaseLetters);
+    if (upperCaseLetters) {
+      //log true or false for uppercase letters
+      console.log(upperCaseLetters);
+    }
     // confirm is user would like to use numbers
     var selectNumbers = confirm(
       "Would you like to include numbers in your password?"
     );
-    //log true or false for numbers
-    console.log(selectNumbers);
+    if (selectNumbers) {
+      //log true or false for numbers
+      console.log(selectNumbers);
+    }
     // confirm is user would like to use symbols
     var selectSymbols = confirm(
       "Would you like to include symbols in your password?"
     );
-    // log true or false for symbols
-    console.log(selectSymbols);
+    if (selectNumbers) {
+      // log true or false for symbols
+      console.log(selectSymbols);
+    }
     // if statements add character arrays to password pool if true
     if (upperCaseLetters) {
       passPool = passPool.concat(upperCase);
@@ -124,7 +132,7 @@ function generatePassword() {
       passPool = passPool.concat(symbols);
       console.log(passPool);
     } else {
-      alert("Please select a character set.");
+      alert("Please choose at least one character set");
     }
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
