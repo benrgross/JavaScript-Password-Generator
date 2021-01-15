@@ -124,7 +124,7 @@ function generatePassword() {
       passPool = passPool.concat(symbols);
       console.log(passPool);
     } else {
-      alert("::cuation:: Please select a character set.");
+      alert("Please select a character set.");
     }
     //Make for loop
     for (i = 0; i < numberOfCharacters; i++) {
