@@ -111,9 +111,17 @@ function generatePassword() {
     var selectSymbols = confirm(
       "Would you like to include symbols in your password?"
     );
-    if (selectNumbers) {
+    if (selectSymbols) {
       // log true or false for symbols
-      console.log(selectNumbers);
+      console.log(selectSymbols);
+    }
+    if (
+      selectNumbers === false &&
+      selectSymbols === false &&
+      upperCaseLetters === false &&
+      lowerCaseLetters === false
+    ) {
+      alert("Please choose at least one character set.");
     }
     if (lowerCaseLetters) {
       passPool = passPool.concat(lowerCase);
